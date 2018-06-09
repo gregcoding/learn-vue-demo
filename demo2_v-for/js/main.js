@@ -1,0 +1,25 @@
+var app=new Vue({
+	el:'#app',
+	data:{
+		productsList:[
+			'1',
+			'2',
+			'3',
+		],
+		productsListTwo:[
+			{
+				name:'xie',
+				price:12,
+				cc:0.5
+			},
+			{
+				name:'xie',
+				price:12,
+			},
+			{
+				name:'xie',
+				price:12,
+			},
+		]
+	}
+})
