@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="app">
+		<div>
+			<input type="text" v-model="product">
+			<span>{{product}}商品名</span>
+		</div>
+		<div>
+			<input type="text" v-model="price">
+			<span>{{price}}价格</span>
+		</div>
+		<div>
+			<input type="text" v-model="test">
+			<!-- 修改display -->
+			<span v-show="test">{{test}}asda</span>
+			<!-- 直接从dom删除 -->
+			<span v-if="test">{{test}}asda</span>
+		</div>
+
+	</div>	
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="js/main.js"></script>
+
